@@ -14,8 +14,9 @@ def rational_numbers():
             yield (-p_abs, q)
             yield (p_abs, q)
 
+n = 100000000
 
 gen = rational_numbers()
-for _ in range(50):
+for _ in range(n):
     p, q = next(gen)
     print(f"{p}/{q} = {p/q}")
